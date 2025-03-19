@@ -1,25 +1,14 @@
 <script setup>
-import HelloWorld from './components/HelloWorld.vue'
+import StarryNight from '../src/components/StarryNight.vue'
+import Earth from './components/Earth.vue';
 </script>
 
 <template>
-  <div class="flex items-center justify-center h-screen bg-blue-500 text-white text-3xl">
-    Vue + Vite + TailwindCSS Setup Complete!
-  </div>
+    <div class="relative w-full h-screen flex items-center justify-center">
+        <StarryNight />
+
+        <div class="inset-0 z-[2]">
+            <Earth />
+        </div>
+    </div>
 </template>
-
-
-<style scoped>
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.vue:hover {
-  filter: drop-shadow(0 0 2em #42b883aa);
-}
-</style>
