@@ -1,1 +1,26 @@
 @import "tailwindcss";
+
+@theme {
+    --animate-earth-spin: moveRight 5s linear infinite;
+    --animate-cloud-flow: moveRightFaster 3s linear infinite;
+
+    @keyframes moveRight {
+        0% {
+            transform: translateX(-100%);
+        }
+    
+        100% {
+            transform: translateX(100%);
+        }
+    }
+
+    @keyframes moveRightFaster {
+        0% {
+            transform: translateX(-50px);
+        }
+    
+        100% {
+            transform: translateX(336px);
+        }
+    }
+}
